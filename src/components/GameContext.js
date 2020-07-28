@@ -4,7 +4,7 @@ import useInterval from "../hooks/use-interval.hook";
 export const GameContext = React.createContext(null);
 
 const GameProvider = ({ children }) => {
-  const [numCookies, setNumCookies] = useState(1000);
+  const [numCookies, setNumCookies] = useState(null);
   const [purchasedItems, setPurchasedItems] = useState({
     cursor: parseInt(window.localStorage.getItem("cursor")) || 0,
     grandma: parseInt(window.localStorage.getItem("grandma")) || 0,
